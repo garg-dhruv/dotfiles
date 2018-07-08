@@ -10,6 +10,17 @@ Plugin 'Valloric/YouCompleteMe'
 " Brackets auto paring
 Plugin 'jiangmiao/auto-pairs'
 
+Plugin 'tpope/vim-surround'
+" Pandoc
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+" Snipits
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+Plugin 'suan/vim-instant-markdown'
+Plugin 'xuhdev/vim-latex-live-preview'
+" :LLPStartPreview - command for preview
 call vundle#end()
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:
@@ -30,3 +41,19 @@ set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
+
+" configration for YouCompleteMe
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+
+" UltiSnipits configrations
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-x>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+" vim markdown preview config
+" turn off auto-start
+let g:instant_markdown_autostart = 0
