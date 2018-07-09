@@ -19,6 +19,9 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 Plugin 'vim-syntastic/syntastic'
+" matching brackets coloring
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 Plugin 'suan/vim-instant-markdown'
 " LaTeX tools
