@@ -18,9 +18,13 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+Plugin 'vim-syntastic/syntastic'
+
 Plugin 'suan/vim-instant-markdown'
+" LaTeX tools
 Plugin 'xuhdev/vim-latex-live-preview'
 " :LLPStartPreview - command for preview
+Plugin 'lervag/vimtex'
 call vundle#end()
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:
@@ -57,3 +61,6 @@ let g:UltiSnipsEditSplit="vertical"
 " vim markdown preview config
 " turn off auto-start
 let g:instant_markdown_autostart = 0
+
+" vimtex config
+let g:vimtex_compiler_latexmk = {'callback' : 0}
