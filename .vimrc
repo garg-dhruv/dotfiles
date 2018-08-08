@@ -18,7 +18,7 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 " matching brackets coloring
 Plugin 'luochen1990/rainbow'
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
@@ -27,7 +27,8 @@ Plugin 'suan/vim-instant-markdown'
 " LaTeX tools
 Plugin 'xuhdev/vim-latex-live-preview'
 " :LLPStartPreview - command for preview
-Plugin 'lervag/vimtex'
+Plugin 'vim-latex/vim-latex'
+" Plugin 'lervag/vimtex'
 call vundle#end()
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:
@@ -66,4 +67,15 @@ let g:UltiSnipsEditSplit="vertical"
 let g:instant_markdown_autostart = 0
 
 " vimtex config
-let g:vimtex_compiler_latexmk = {'callback' : 0}
+" let g:vimtex_compiler_latexmk = {'callback' : 0}
+
+" syntastic configs
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
