@@ -25,9 +25,9 @@ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 Plugin 'suan/vim-instant-markdown'
 " LaTeX tools
-Plugin 'xuhdev/vim-latex-live-preview'
+" Plugin 'xuhdev/vim-latex-live-preview'
 " :LLPStartPreview - command for preview
-Plugin 'vim-latex/vim-latex'
+" Plugin 'vim-latex/vim-latex'
 " Plugin 'lervag/vimtex'
 call vundle#end()
 filetype plugin indent on
