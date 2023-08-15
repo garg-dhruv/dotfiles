@@ -15,7 +15,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 " Snipits
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " Plugin 'vim-syntastic/syntastic'
@@ -29,6 +29,9 @@ Plugin 'suan/vim-instant-markdown'
 " :LLPStartPreview - command for preview
 " Plugin 'vim-latex/vim-latex'
 " Plugin 'lervag/vimtex'
+
+Plugin 'fatih/vim-go'
+
 call vundle#end()
 filetype plugin indent on
 " To ignore plugin indent changes, instead use:
@@ -81,3 +84,10 @@ let g:syntastic_check_on_wq = 0
 
 " Enable syntax highlighting
 syntax on
+
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" on pressing tab, insert 4 spaces
+set expandtab
